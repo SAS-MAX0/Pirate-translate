@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirate Translator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="back">
+        <div class="container">
+            <h1 class="welcome">Ahoy mate, welcome to the Pirate Translator</h1>
+            <p class="detail">Hop aboard and have some fun!</p>
+            <div class="buttons">
+                <a href="translate.html" class="button">Translate ye english to <br>Pirate language!</a>
+                <a href="insult.html" class="button">Random pirate <br>insults</a>
+                <button id="start-audio" class="button">Start Pirate Music!</button>
+
+                <p class="credit">I made use of <a href="https://pirate.monkeyness.com">Pirate Monkeyness API</a></p>
+            </div>
+
+        </div>
+    </div>
+
+#    <audio id="pirate-audio" src="1.mp3" preload="auto" loop></audio>
+
+    <script>
+        window.addEventListener('load', function() {
+            var audio = document.getElementById('pirate-audio');
+            var startButton = document.getElementById('start-audio');
+
+            startButton.addEventListener('click', function() {
+                audio.play();
+                localStorage.setItem('audioPlaying', 'true');
+                startButton.disabled = true;
+            });
+        });
+    </script>
+</body>
+</html>

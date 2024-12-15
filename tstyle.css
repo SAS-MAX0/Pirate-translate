@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+body {
+    font-family: 'Pirata One', cursive;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #F1E1C6; 
+    background-color: #f4e1d2;
+    background-image: url('bing1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid #D1B28A;
+    border-radius: 15px;
+    max-width: 500px;
+    text-align: center;
+    color: #C88A3B;
+}
+
+h2 {
+    margin: 0 0 20px;
+    color: #C88A3B;
+    text-shadow: 2px 2px 4px #000;
+    font-size: 28px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 350px;
+    border: 2px solid #E5C100;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Pirata One', cursive;
+    background: rgba(255, 255, 255, 0.2);
+    color: #C88A3B;
+}
+
+textarea::placeholder {
+    color: #C88A3B;
+    opacity: 0.8;
+}
+
+.button {
+    text-decoration: none;
+    padding: 12px 25px;
+    margin-bottom: 17px;
+    font-size: 20px;
+    color: #F1E1C6;
+    background: #6a4e23;
+    border: 2px solid #E5C100;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, background-color 0.3s;
+    cursor: pointer;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #5a3b1a;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+h3 {
+    color: #C88A3B;
+    margin-top: 15px;
+}
+
+.pirate-output {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #C88A3B;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px solid #E5C100; 
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+
+.button, textarea, .pirate-output {
+    border-color: #C88A3B; 
+}
+
+.pirate-output {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.back-button {
+    font-family: 'Pirata One', cursive;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-size: 20px;
+    color: #C88A3B;
+    background: #6a4e23;
+    border: 2px solid #C88A3B;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, background-color 0.3s;
+    cursor: pointer;
+    position: absolute; 
+    top: 20px; 
+    left: 20px;
+    margin-top: 0;
+    display: inline-block;
+}
+
+
+.back-button:hover {
+    background-color: #5a3b1a;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
